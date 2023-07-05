@@ -1,4 +1,4 @@
-![img](https://projecteuler.net/profile/israfilgasim.png)
+![Project Euler](https://projecteuler.net/profile/israfilgasim.png)
 
 
 # Project Euler Solutions
