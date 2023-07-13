@@ -1,4 +1,4 @@
-![](https://projecteuler.net/profile/israfilgasim.png)
+![My Euler Account](https://projecteuler.net/profile/israfilgasim.png)
 
 # Project Euler Solutions
 
