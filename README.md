@@ -1,4 +1,6 @@
-![My Euler Account](https://projecteuler.net/profile/israfilgasim.png)
+<p align="center">
+  <img width="200" height="60" src="https://projecteuler.net/profile/israfilgasim.png">
+</p>
 
 # Project Euler Solutions
 
