@@ -36,4 +36,4 @@ I hope my Project Euler Solutions repository serves as a valuable resource for t
 
 Happy coding and happy problem-solving!
 
-Israfil Gasim.
+Israfil Gasim
