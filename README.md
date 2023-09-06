@@ -28,7 +28,7 @@ To contribute, simply fork this repository, make your modifications, and submit 
 
 ## Disclaimer
 
-Project Euler values the exploration of mathematical problems, emphasizing the learning experience rather than simply providing solutions. Therefore, I encourage you to attempt solving the problems on your own before diving into the solutions. Remember, the joy of discovering the solution lies in the process itself!!!
+Project Euler values the exploration of mathematical problems, emphasizing the learning experience rather than simply providing solutions. Therefore, I encourage you to attempt solving the problems on your own before diving into the solutions. Remember, the joy of discovering the solution lies in the process itself!
 
 ## Conclusion
 
