@@ -1,3 +1,5 @@
+import time
+
 txt = """75
 95 64
 17 47 82
@@ -14,46 +16,30 @@ txt = """75
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"""
 
+start = time.time()
 txt = txt.split("\n")
 
 lst = []
 
 for i in range(len(txt)):
-    lst.append(txt[i].split(" "))
+    k = txt[i].split(" ")
+    new = []
+    for j in k:
+        new.append(int(j))
+    lst.append(new)
 
-sum = int(lst[0][0])
-last = 0
 
-for i in range(1, len(lst) - 1):
-    way1a = int(lst[i][last]) + int(lst[i + 1][last])
-    if lst[i + 1][last + 1] != None:
-        way1b = int(lst[i][last]) + int(lst[i + 1][last + 1])
-    else:
-        way1b = 0
-    if lst[i][last + 1] != None and lst[i + 1][last + 1] != None:
-        way2a = int(lst[i][last + 1]) + int(lst[i + 1][last + 1])
-    else:
-        way2a = 0
-    if lst[i][last + 1] != None and lst[i + 1][last + 2] != None:
-        way2b = int(lst[i][last + 1]) + int(lst[i + 1][last + 2])
-    else:
-        way2b = 0
-    big = max(way1a, way1b, way2a, way2b)
-    if big == way1a:
-        sum += int(lst[i][last])
-        last = last
-    elif big == way1b:
-        sum += int(lst[i][last])
-        last = last
-    elif big == way2a:
-        sum += int(lst[i][last + 1])
-        last = last + 1
-    elif big == way2b:
-        sum += int(lst[i][last + 1])
-        last = last + 1
+l = len(lst)
 
-sum += max(int(lst[len(lst) - 1][last]), int(lst[len(lst) - 1][last + 1]))
+for i in range(1,l):
+    lenofrow = len(lst[i])
+    for j in range(lenofrow):
+        if j == 0:
+            lst[i][j] = lst[i][j] + lst[i-1][j]
+        elif j == lenofrow-1:
+            lst[i][j] = lst[i][j] + lst[i-1][j-1]
+        else:
+            lst[i][j] = lst[i][j] + max(lst[i-1][j-1], lst[i-1][j])
 
-print(sum)
-
-# answer: 1074
+print(time.time()-start) # 0 seconds 
+print(max(lst[-1])) # 1074
